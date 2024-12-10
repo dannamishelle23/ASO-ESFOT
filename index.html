@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./src/css/normalize.css">
     <title>ASOESFOT</title>
-    <link rel="stylesheet" href="src/css/styles.css">    <!--Vincular el index con su respectivo style.css-->
+    <link rel="stylesheet" href="src/css/styles.css">
+   <script src="./src/js/hamburguesa.js" defer></script>
+   <script src = "./src/js/acordeon.js"></script>
 </head>
 <body>
     <header class="header">
@@ -12,10 +20,10 @@
             </div>
             <div class="header__barra">
                 <div class="navegacion">
-                    <a href=" class="navegacion__link navegacion__link--active">Inicio</a>
-                    <a href="src/pages/nosotros.html" class="navegacion__link">Nosotros</a> <!--Vincular el menú con su respectiva página-->
-                    <a href="src/pages/servicios.html" class="navegacion__link">Servicios</a> <!--Vincular el menú con su respectiva página-->
-                    <a href="src/pages/contacto.html" class="navegacion__link">Contactos</a> <!--Vincular el menú con su respectiva página.-->
+                    <a href="/asoesfot-Main/index.html" class="navegacion_link navegacion_link--active">Inicio</a>
+                    <a href="./src/pages/nosotros.html" class="navegacion__link">Nosotros</a>
+                    <a href="./src/pages/servicios.html" class="navegacion__link">Servicios</a>
+                    <a href="./src/pages/contacto.html" class="navegacion__link">Contactos</a>
                 </div>
                 <div class="buttons">
                     <a href="./src/pages/login.html" class="button">Login</a>
@@ -24,21 +32,9 @@
             </div>
             <div class="header__hamburger"><i class="fas fa-bars hamburger"></i></div>
         </nav>
-
-</header>
-<!--Aplicar el efecto type usando java script.-->
+    </header>
     <main>
         <h2 id="typed"></h2>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed("#typed", {
-            strings: ['Bienvenid@s Esfotdianos', 'Noticias actuales', 'Apoyo académico', 'Cursos de refuerzo', ' y mucho más....'],
-            typeSpeed: 60,
-            backDelay: 500,
-            startDelay: 1000,
-            loop: true,
-        });
-    </script>
     </main>
 
     <section class="carreras__container">
@@ -147,8 +143,16 @@
         </div>
         <p class="footer__copyright">Derechos reservados</p>
     </footer>
-
-   
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#typed", {
+            strings: ['Bienvenid@s Esfotdianos', 'Noticias actuales', 'Apoyo académico', 'Cursos de refuerzo', ' y mucho más....'],
+            typeSpeed: 50,
+            backDelay: 500,
+            startDelay: 1000,
+            loop: true,
+        });
+    </script>
     
 </body>
 </html>
